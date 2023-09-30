@@ -1,0 +1,150 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    background-color: var(--color-bg);
+    padding: 1.5rem 1rem;
+    color: var(--color-primary);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.logo-container h1{
+   font-family: 'Lobster Two', cursive;
+   text-transform: uppercase;
+}
+
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+.nav-content ul li a{
+    color: var(--color-primary);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.98rem 0.7rem;
+}
+
+.nav-content ul li a:hover{
+    color: var(--color-bg-hover);
+    background-color: #445069;
+    border-radius: 0.2rem;
+
+}
+
+.nav-content ul li a.active{
+    color: var(--color-bg-hover);
+    background-color: #445069;
+    border-radius: 0.2rem;
+    border-top: 3px solid #cee6f3;
+}
+
+
+.harmburg-icon{
+    font-size: 1.7rem;
+    color: #75C2F6;
+    cursor: pointer;
+    transform: rotate(0deg);
+    display: none;
+    transition: all 0.4s ease;
+    transform: rotate(-180deg);
+}
+
+.harmburg-icon.open{ 
+    display: block;
+}
+
+/* ============================= MOBILE NAVBAR ========================== */
+.mobile-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.mobile-navbar {
+    position: absolute;
+    top: 4rem;
+    background-color: #1f354477;
+    width: 70%;
+    padding: 0.8rem 1rem;
+    border-radius: var(--border-radius);
+    display: none;
+}
+
+.mobile-navbar li{
+    padding: 0.5rem 0;
+}
+
+.mobile-navbar li a{
+    color: var(--color-bg);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.mobile-navbar li a:hover{
+    color: var(--color-primary);
+}
+
+.gap {
+    margin: 1.3rem 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        gap: 1.5rem;
+    }
+    
+    .logo-container h1{
+       font-size: 1.2rem;
+     }
+
+     .nav-content ul{
+        gap: 1.5rem;
+    }
+  }
+
+@media screen and (max-width: 950px) {
+    .nav-container {
+        gap: 1.5rem;
+        justify-content: space-between;
+    }
+    
+    .logo-container h1{
+       font-size: 1.2rem;
+       text-align: right;
+     }
+
+
+    .nav-content ul{
+        display: none;
+    }
+
+    
+
+    .harmburg-icon{
+        display: block;
+    }
+
+    .mobile-navbar {
+        top: 3.6rem;
+    }
+
+
+  }
+

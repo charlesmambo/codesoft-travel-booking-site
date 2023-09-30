@@ -1,0 +1,211 @@
+.main-section {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background: url('../../assets/bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flight-booking-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.flight-category {
+    display: flex;
+}
+
+.flight-category-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem 1.2rem;
+}
+
+.icon{
+    display: block;
+    font-size: 1.6rem;
+    color: #c70039;
+}
+
+
+.flight-heading-text {
+    background-color: var(--color-bg);
+    border-top-left-radius: 0.2rem;
+}
+
+.flight-category h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.3px;
+}
+
+.sub-heading{
+    background-color: var(--color-bg-hover);
+    color: var(--color-bg);
+}
+
+.sub-heading h2{
+    color: var(--color-bg);
+}
+
+.two {
+    border-left: 2px solid var(--border-color);
+}
+
+.car-hire-heading {
+    border-top-right-radius: var( --border-radius);
+    border-bottom-right-radius: var( --border-radius);
+}
+
+.flight-book {
+    display: flex;
+}
+
+/*======================= TRIP SECTION  */
+.trip-container {
+    background-color: var(--color-bg);
+    width: 100%;
+    min-width: 40rem;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    border-top-right-radius:  var(  --border-radius);
+    border-bottom-right-radius: var(  --border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    z-index: 4;
+}
+
+
+
+.trip-sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.trips {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+} 
+
+.trip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.3rem 0;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font-family: inherit;
+    color: currentColor;
+    width: 1rem;
+    height: 1rem;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+  }
+
+  .trip-text{
+    text-transform: capitalize;
+    color: var(--color-primary);
+    letter-spacing: 1.1px;
+    font-size: 1.03rem;
+  }
+
+
+  /* ================== FLIGHT BOOKING SECTION ================= */
+  .flight-booking {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .choose-booking {
+    margin-top: 0.6rem;
+  }
+
+  .choose-flight-from h5{
+     font-size: 1rem;
+     font-weight: 400;
+     margin: 0.5rem 0;
+     text-transform: capitalize;
+     color: #bbbbbb;
+  }
+
+  .choose-flight-checkbox {
+    margin-top: 1rem;
+  }
+
+  .choose-flight-checkbox span{
+    font-size: 0.9rem;
+  }
+
+ /* ============================= FLIGHT ARRANGEMENT ===== */
+  .flight-arrangement-container {
+    margin-top: 2.5rem;
+  }
+ 
+ /* ============================= Airline companies container ===== */
+  .airline-companies-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 1rem 2rem;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+
+
+  .why-chooseus-container {
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 1455px) {
+    .main-section {
+        height: 100vh;
+    }
+  }
+
+  @media screen and (max-width: 1068px) {
+    .trip-container {
+        width: var(--container-width-md);
+        min-width: 100%;
+        padding: 1.1rem 1.1rem 2rem 1.1rem;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    .flight-category h2 {
+        font-size: 1.1rem;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .flight-booking-container {
+      margin-top: 4rem;
+  }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .airline-companies-container {
+      margin-top: 3rem;
+    }
+
+}
+  
+
+
+ 

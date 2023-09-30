@@ -1,0 +1,104 @@
+.news-letter {
+    background-color: var(--color-bg);
+    color: var( --color-primary);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var( --transition);
+}
+
+.news-letter-icon {
+    font-size: 6rem;
+    color: #c70039;
+}
+
+.news-content {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.news-text-content p {
+    font-size: 1.1rem;
+}
+
+.news-text-content h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.news-from {
+    display: flex;
+}
+
+.news-from input {
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--color-bg);
+    display: block;
+    font-size: 1.02rem;
+    font-family: inherit;
+    padding: var(--container-padding);
+    width: 20vw;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.news-from button{
+    border: none;
+    border-radius: var(--border-radius);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    padding: var(--container-padding);
+    font-family: inherit;
+    font-size: 1.03rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #c70039;
+    color: var(--color-primary);
+    letter-spacing: 1.2px;
+    transition: var( --transition);
+}
+
+.news-from button:hover {
+    color: #c70039;
+    background-color: var(--color-primary);
+}
+
+@media screen and (max-width: 1050px) {
+  
+  }
+
+@media screen and (max-width: 855px) {
+    .news-letter {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news-from input {
+        width: 75vw;
+        margin-bottom: 0.8rem;
+        border-radius: var(--border-radius);
+    }
+
+    .news-from button {
+        border-radius: var(--border-radius);
+    }
+
+    .news-letter-icon {
+        font-size: 4rem;
+    }
+
+    .news-text-content h4{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .news-from {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,29 @@
+.comp-carousel {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.carousel-img-container {
+    width: 22rem !important;
+    min-width: 18rem;
+    height:10rem;
+    overflow: hidden !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 2px solid #2e2f30;
+    border-radius: var(--border-radius);
+}
+
+.carousel-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: var(--border-radius);
+    aspect-ratio: 1/1;
+}
+
+
+@media screen and (max-width: 600px){
+    .carousel-img-container {
+        width: 18rem !important;
+    }
+}
